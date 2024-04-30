@@ -70,66 +70,12 @@
     "configurationVersion" : "v2"
   },
   "connections" : [ ],
-  "processes" : {
-    "714RyIlL7SgoVFNWY8_KC$$UaEylkHYCdZIZ72Ig3V9-" : {
-      "id" : "714RyIlL7SgoVFNWY8_KC$$UaEylkHYCdZIZ72Ig3V9-",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_0",
-        "slug" : "Reformat_0",
-        "x" : -860,
-        "y" : -220,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "9gww3BZ-GoUfb4TDnOaZs$$X3rZfeoGM1gSoZHE0_8D7",
-          "slug" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "iQHEkFV-qZBZ8-EUK-_ng$$y1AZD6odEsqOLxFMEZiBD",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=&tag=0.1.2&projectSubscriptionProjectId=12651&path=gems/Reformat",
-        "projectName" : "ProphecySparkBasicsScala"
-      }
-    }
-  },
+  "processes" : { },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.processes.714RyIlL7SgoVFNWY8_KC$$UaEylkHYCdZIZ72Ig3V9-",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Please connect input port in",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  } ]
+  }
 }
