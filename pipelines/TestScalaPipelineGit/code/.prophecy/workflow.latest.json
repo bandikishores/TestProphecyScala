@@ -32,7 +32,25 @@
     "configuration" : {
       "common" : {
         "type" : "record",
-        "fields" : [ ]
+        "fields" : [ {
+          "name" : "Subgraph_0",
+          "kind" : {
+            "type" : "record",
+            "fields" : [ ]
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : true,
+          "isReferenced" : false
+        }, {
+          "name" : "Subgraph_0_1",
+          "kind" : {
+            "type" : "record",
+            "fields" : [ ]
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : true,
+          "isReferenced" : false
+        } ]
       },
       "oldCommon" : {
         "type" : "record",
@@ -70,12 +88,188 @@
     "configurationVersion" : "v2"
   },
   "connections" : [ ],
-  "processes" : { },
+  "processes" : {
+    "cRTIivvzHtcyBYOTTR6qf$$Fz6V5v3VAhpbd18_AmZ_g" : {
+      "id" : "cRTIivvzHtcyBYOTTR6qf$$Fz6V5v3VAhpbd18_AmZ_g",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_0",
+        "slug" : "Subgraph_0",
+        "x" : -660,
+        "y" : -220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "rYw2gZgVIjoeBWCNtkEP7$$dE5W4Km_641ALQvQM06Lm",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { },
+      "connections" : [ {
+        "id" : "XgsLiPfmbU3oQ2CzR30U2",
+        "source" : "Lhj3dPD1TpGtis6y8RGT3$$omYR9do2BOxo3NHDKh3kq",
+        "sourcePort" : "LcCdKwl6ilm977V6XLaMO$$OX9zsDG38ZS9Ew05m_OYy",
+        "target" : "cRTIivvzHtcyBYOTTR6qf$$Fz6V5v3VAhpbd18_AmZ_g",
+        "targetPort" : "rYw2gZgVIjoeBWCNtkEP7$$dE5W4Km_641ALQvQM06Lm"
+      } ],
+      "processes" : {
+        "Lhj3dPD1TpGtis6y8RGT3$$omYR9do2BOxo3NHDKh3kq" : {
+          "id" : "Lhj3dPD1TpGtis6y8RGT3$$omYR9do2BOxo3NHDKh3kq",
+          "component" : "Script",
+          "metadata" : {
+            "label" : "script_1",
+            "slug" : "script_1",
+            "x" : -640,
+            "y" : -200,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ ],
+            "outputs" : [ {
+              "id" : "LcCdKwl6ilm977V6XLaMO$$OX9zsDG38ZS9Ew05m_OYy",
+              "slug" : "out0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ ]
+              },
+              "isStreaming" : false
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : true,
+            "autoUpdateOnRun" : true
+          },
+          "properties" : {
+            "script" : "out0 = null",
+            "scriptMethodHeader" : "def apply(spark: SparkSession): DataFrame = {",
+            "scriptMethodFooter" : "    out0\n}"
+          }
+        }
+      }
+    },
+    "9yiekUoPFYWmH6Hm6vSw6$$IqVGept0ODm-ufkarcxri" : {
+      "id" : "9yiekUoPFYWmH6Hm6vSw6$$IqVGept0ODm-ufkarcxri",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_0_1",
+        "slug" : "Subgraph_0_1",
+        "x" : -960,
+        "y" : -440,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "TZ1-7Qpe-Bc58-B11Nck1$$bi-bZY6dNa3Va_PT_j_Rr",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "externalId" : "subgraphs/pubSub1",
+        "name" : "pubSub1",
+        "packageName" : "com.test"
+      },
+      "connections" : [ {
+        "id" : "E5FdtMnkDQ3YiNFHIRzFM",
+        "source" : "EGD9tmjMJtZrnCRWHZO_1$$cXBX5yNQiJByrKenfO79g",
+        "sourcePort" : "WKUjZW-n-UTJ_vYKPbgef$$p7IuFzH-l1eirSpnGEzTi",
+        "target" : "9yiekUoPFYWmH6Hm6vSw6$$IqVGept0ODm-ufkarcxri",
+        "targetPort" : "TZ1-7Qpe-Bc58-B11Nck1$$bi-bZY6dNa3Va_PT_j_Rr"
+      } ],
+      "processes" : {
+        "EGD9tmjMJtZrnCRWHZO_1$$cXBX5yNQiJByrKenfO79g" : {
+          "id" : "EGD9tmjMJtZrnCRWHZO_1$$cXBX5yNQiJByrKenfO79g",
+          "component" : "Script",
+          "metadata" : {
+            "label" : "script_1_1",
+            "slug" : "script_1_1",
+            "x" : -394.00000000000006,
+            "y" : -72.8,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ ],
+            "outputs" : [ {
+              "id" : "WKUjZW-n-UTJ_vYKPbgef$$p7IuFzH-l1eirSpnGEzTi",
+              "slug" : "out0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ ]
+              },
+              "isStreaming" : false
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : true,
+            "autoUpdateOnRun" : true
+          },
+          "properties" : {
+            "script" : "out0 = null",
+            "scriptMethodHeader" : "def apply(spark: SparkSession): DataFrame = {",
+            "scriptMethodFooter" : "    out0\n}"
+          }
+        }
+      }
+    }
+  },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.cRTIivvzHtcyBYOTTR6qf$$Fz6V5v3VAhpbd18_AmZ_g.processes.Lhj3dPD1TpGtis6y8RGT3$$omYR9do2BOxo3NHDKh3kq.ports.outputs",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 3,
+    "message" : "Please infer output schema from the cluster as described [here](https://docs.prophecy.io/low-code-spark/gems/custom/script/)",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 2
+  }, {
+    "property" : "$.workflow.processes.9yiekUoPFYWmH6Hm6vSw6$$IqVGept0ODm-ufkarcxri.processes.EGD9tmjMJtZrnCRWHZO_1$$cXBX5yNQiJByrKenfO79g.ports.outputs",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 3,
+    "message" : "Please infer output schema from the cluster as described [here](https://docs.prophecy.io/low-code-spark/gems/custom/script/)",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 2
+  } ]
 }

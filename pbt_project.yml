@@ -22,7 +22,8 @@ pipelines:
     datasets:
       inputs: []
       outputs: []
-    subgraphs: []
+    subgraphs:
+    - subgraphs/pubSub1
     dependencies: {}
 datasets: {}
 templates: {}
@@ -39,7 +40,15 @@ functions:
   udafs: {}
   expressions: {}
   airflowFunctions: {}
-subgraphs: {}
+subgraphs:
+  subgraphs/pubSub1:
+    name: pubSub1
+    description: ''
+    author: kishore@simpledatalabs.com
+    language: scala
+    artefactID: ''
+    mode: batch
+    createdAt: '2024-04-30 17:05:05'
 sqlModels: {}
 sqlSnapshots: {}
 sqlMacros: {}

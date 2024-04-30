@@ -13,9 +13,17 @@ import org.apache.spark.sql.expressions._
 import java.time._
 
 object Main {
-  def apply(context: Context): Unit = {}
 
-  def main(args:     Array[String]): Unit = {
+  def apply(context: Context): Unit = {
+    val df_Subgraph_0 = Subgraph_0.apply(
+      Subgraph_0.config.Context(context.spark, context.config.Subgraph_0)
+    )
+    val df_Subgraph_0_1 = Subgraph_0_1.apply(
+      Subgraph_0_1.config.Context(context.spark, context.config.Subgraph_0_1)
+    )
+  }
+
+  def main(args: Array[String]): Unit = {
     val config = ConfigurationFactoryImpl.getConfig(args)
     val spark: SparkSession = SparkSession
       .builder()
