@@ -1,6 +1,6 @@
 name: GitBackedScala
 description: ''
-version: '3.0'
+version: '4.0'
 author: kishore@simpledatalabs.com
 language: scala
 buildSystem: ''
